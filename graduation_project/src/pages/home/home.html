@@ -1,0 +1,106 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-navbar>
+  <div class="head">
+      <div id="search">
+          <ion-icon name="search"></ion-icon>
+          <input type="text" placeholder="点击搜索你想要的商品" (click)="goSearch()">
+      </div>
+  </div>
+</ion-header>
+
+<ion-content>
+  <ion-slides loop="true" autoplay="3000" pager="true">
+    <ion-slide><img src="assets/imgs/首页轮播/床01.jpg" /></ion-slide>
+    <ion-slide><img src="assets/imgs/首页轮播/洗手液02.jpg" /></ion-slide>
+    <ion-slide><img src="assets/imgs/首页轮播/锅03.jpg" /></ion-slide>
+  </ion-slides>
+  <ul id="navigation">
+    <li>
+      <img src="../assets/imgs/首页推荐/图标-新品.jpg" alt="">
+      <span>新品</span>
+    </li>
+    <li>
+        <img src="../assets/imgs/首页推荐/图标-热卖.jpg" alt="">
+        <span>热卖</span>
+    </li>
+    <li>
+        <img src="../assets/imgs/首页推荐/图标-家具.jpg" alt="">
+        <span>家具</span>
+    </li>
+    <li>
+        <img src="../assets/imgs/首页推荐/图标-家居服.jpg" alt="">
+        <span>家居服</span>
+    </li>
+    <li>
+        <img src="../assets/imgs/首页推荐/图标-床品.jpg" alt="">
+        <span>床品</span>
+    </li>
+    <li>
+        <img src="../assets/imgs/首页推荐/图标-下厨.jpg" alt="">
+        <span>下厨</span>
+    </li>
+    <li>
+        <img src="../assets/imgs/首页推荐/图标-家务.jpg" alt="">
+        <span>家务</span>
+    </li>
+    <li>
+        <img src="../assets/imgs/首页推荐/图标-日用.jpg" alt="">
+        <span>生活日用</span>
+    </li>
+    <li>
+        <img src="../assets/imgs/首页推荐/图标-洗护.jpg" alt="">
+        <span>洗护</span>
+    </li>
+    <li>
+        <img src="../assets/imgs/首页推荐/图标-甩卖.jpg" alt="">
+        <span>甩卖</span>
+    </li>
+  </ul>
+  <img src="../assets/imgs/首页推荐/今日上新.png" alt="">
+  <ul class="goods">
+    <li (click)="goGoods()">
+      <img src="../assets/imgs/首页推荐/商品01.jpg" alt="">
+      <span>&nbsp;自动恒温暖杯垫</span>
+      <span style="color:red;">&nbsp;￥ 69</span>
+    </li>
+    <li>
+        <img src="../assets/imgs/首页推荐/商品02.jpg" alt="">
+        <span>&nbsp;多功能暖手宝</span>
+        <span style="color:red;">&nbsp;￥ 138</span>
+    </li>
+    <li>
+        <img src="../assets/imgs/首页推荐/商品03.jpg" alt="">
+        <span>&nbsp;可爱卡通坐垫</span>
+        <span style="color:red;">&nbsp;￥ 35</span>
+    </li>
+    <li>
+        <img src="../assets/imgs/首页推荐/商品04.jpg" alt="">
+        <span>&nbsp;黛西珊瑚绒睡衣</span>
+        <span style="color:red;">&nbsp;￥ 139</span>
+    </li>
+    <li>
+        <img src="../assets/imgs/首页推荐/商品05.jpg" alt="">
+        <span>&nbsp;一次性毛浴巾</span>
+        <span style="color:red;">&nbsp;￥ 14</span>
+    </li>
+    <li>
+        <img src="../assets/imgs/首页推荐/商品06.jpg" alt="">
+        <span>&nbsp;南极人护颈枕头</span>
+        <span style="color:red;">&nbsp;￥ 89</span>
+    </li>
+    <li>
+        <img src="../assets/imgs/首页推荐/商品07.jpg" alt="">
+        <span>&nbsp;免手洗拖把</span>
+        <span style="color:red;">&nbsp;￥ 99</span>
+    </li>
+    <li>
+        <img src="../assets/imgs/首页推荐/商品08.jpg" alt="">
+        <span>&nbsp;鳄鱼宝宝小黄鸭洗手液</span>
+        <span style="color:red;">&nbsp;￥ 36</span>
+    </li>
+  </ul>
+</ion-content>

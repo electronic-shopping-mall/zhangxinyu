@@ -1,0 +1,75 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+.toolbar-background{
+    background: white!important;
+  }
+// .toolbar-title{
+//     text-align: center;
+//     color:#80c9c4;
+// }
+.toolbar-title-ios{
+    font-weight:100!important;
+    color:#80c9c4;
+}
+@font-face {
+    font-family: 'Ionicons';
+    src: url('../assets/fonts/iconfont.eot');
+    src: url('../assets/fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/iconfont.woff') format('woff'),
+    url('../assets/fonts/iconfont.ttf') format('truetype'),
+    url('../assets/fonts/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family:"Ionicons" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-time:before {
+    content: "\e629";
+  }
+  
+  .icon-star:before {
+    content: "\e6a8";
+  }
+  
+  .icon-you:before {
+    content: "\e608";
+  }
+  
+  .icon-geren:before {
+    content: "\e600";
+  }
+  
+  .icon-shezhi:before {
+    content: "\e602";
+  }
+  
+  .icon-xiaolian:before {
+    content: "\e654";
+  }
+  
+  .icon-location:before {
+    content: "\e68b";
+  }
+  
+  .icon-icon_home:before {
+    content: "\e601";
+  }
+  
