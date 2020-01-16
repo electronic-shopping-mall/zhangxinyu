@@ -2,7 +2,6 @@
 电子购物商城前台子系统设计与实现
 
 # 截至目前已完成任务
-
 1. 墨刀原型设计     [https://free.modao.cc/app/47f6e03dbb90c8b2f5dc9053163f6a7103ed0f87](https://free.modao.cc/app/47f6e03dbb90c8b2f5dc9053163f6a7103ed0f87)
 
 2. ionic项目创建
