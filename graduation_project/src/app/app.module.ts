@@ -46,6 +46,7 @@ import { ShowerPage } from '../pages/shower/shower';
     IonicModule.forRoot(MyApp,{
       backButtonText:'',
       tabsHideOnSubPages:true, //跳转之后隐藏下面的导航栏
+      // backButtonIcon:"chevron-back-outline"
     })
   ],
   bootstrap: [IonicApp],
