@@ -22,4 +22,9 @@ export class ShowerPage {
     console.log('ionViewDidLoad ShowerPage');
   }
 
+  isActive=1;
+
+  isClick(i){
+    this.isActive=i;
+  }
 }

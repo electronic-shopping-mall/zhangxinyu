@@ -1,3 +1,101 @@
 page-shower {
+    ion-header{
+        width: 100%;
+        height:95px;
+        // border:1px solid red;
+        div{
+            width: 100%;
+            height:40px;
+            .my-title{
+                line-height: 40px;
+            }
+        }
+    }
+    // ion-toorbar{
+    //     width: 100%;
+    //     height:100px;
+    //     // border:1px solid gray;
+    // }
+    #navList{
+        width: 100%;
+        height:40px;
+        // border:1px solid black;
+        margin-top:10px;
+        padding: 0;
+        list-style: none;
+        li{
+            width: 20%;
+            height:40px;
+            float: left;
+            // border:1px solid red;
+            text-align: center;
+            line-height: 40px;
+            font-size:15px;
+        }
+        .one{
+            color:#80c9c3;
+            border-bottom:2px solid #80c9c3;
+        }
+        .two{
+            color:#80c9c3;
+            border-bottom:2px solid #80c9c3;
+        }
+        .three{
+            color:#80c9c3;
+            border-bottom:2px solid #80c9c3;
+        }
+        .four{
+            color:#80c9c3;
+            border-bottom:2px solid #80c9c3;
+        }
+        .five{
+            color:#80c9c3;
+            border-bottom:2px solid #80c9c3;
+        }
+    }
+    .goods{
+        width: 100%;
+        height:1200px;
+        // border:1px solid black;
+        list-style: none;
+        margin:0;
+        padding:0;
+        background:#F5F5F5;
+        li{
+            float: left;
+            width:46%;
+            height:260px;
+            margin:2% 2% 2% 2%;
+            // border:1px solid #BBBBBB;
+            border-radius: 10px;
+            background: white;
+            // div{
+            //     width: 160px;
+            //     height:200px;
+            //     border:1px solid green;
+            //     border-radius: 10px;
+            //     margin:0 auto;
+            //     img{
+            //         width:160px;
+            //         height:200px;
+            //         border-radius: 10px;
 
+            //     }
+            // }
+            img{
+                width:100%;
+                height:210px;
+                border-radius: 10px;
+
+            }
+            span{
+                // margin-top:2px;
+                width:100%;
+                height:20px;
+                display: block;
+                // border:1px solid green;
+                font-size:16px;
+            }
+        }
+    }
 }
