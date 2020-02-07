@@ -1,9 +1,10 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Home
-    </ion-title>
-  </ion-navbar>
+    <ion-toolbar>  
+        <!-- <button ion-button clear small navPop style="padding: 0;">  
+            <i class="iconfont icon-back"></i>
+        </button>   -->
+        <ion-title class="my-title">首页</ion-title>  
+    </ion-toolbar>
   <div class="head">
       <div id="search">
           <ion-icon name="search"></ion-icon>
@@ -51,9 +52,9 @@
         <img src="../assets/imgs/首页推荐/图标-日用.jpg" alt="">
         <span>生活日用</span>
     </li>
-    <li>
+    <li (click)="goShower()">
         <img src="../assets/imgs/首页推荐/图标-洗护.jpg" alt="">
-        <span>洗护</span>
+        <span>洗 沐</span>
     </li>
     <li>
         <img src="../assets/imgs/首页推荐/图标-甩卖.jpg" alt="">
