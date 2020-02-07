@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { SetPage } from '../set/set';
 
 @Component({
   selector: 'page-contact',
@@ -11,4 +12,7 @@ export class ContactPage {
 
   }
 
+  goSet(){
+    this.navCtrl.push(SetPage);
+  }
 }
