@@ -11,23 +11,34 @@ page-informationdetail {
                 display: block;
                 text-align: center;
                 line-height: 50px;
-                width: 100%;
+                width: 94%;
                 height:50px;
                 font-size: 16px;
                 // font-weight: bold;
+                // border:1px solid white;
                 ion-icon{
                     position:absolute;
-                    margin-left:50px;
+                    right:10px;
                     line-height: 50px;
-                    font-size: 25px;
+                    font-size: 27px;
                     font-weight: bold;
                 }
             }
         }
     }
     ion-content{
-        p{
-            padding:8px;
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li{
+                p{
+                    // width:300px;
+                    padding:9px;
+                    text-indent:1em; 
+                    white-space:pre-wrap; //保留空白符序列，但是正常地进行换行。
+                }
+            }
         }
     }
 }
