@@ -6,7 +6,7 @@
 墨刀原型设计链接     [https://free.modao.cc/app/47f6e03dbb90c8b2f5dc9053163f6a7103ed0f87](https://free.modao.cc/app/47f6e03dbb90c8b2f5dc9053163f6a7103ed0f87)
 
 #### ionic项目创建及配置相关文件
-![配置文件](./database_chart/ionic配置文件.png)配置文件
+![配置文件](/database_chart/ionic配置文件.png)配置文件
 
 #### 后端虚拟服务器环境配置及mysql数据库环境配置
 
@@ -28,12 +28,12 @@
 5. 资讯页:请求资讯页面数据  查看资讯详情 
 
 
-![商品表](./database_chart/商品表.png)商品表
+![商品表](/database_chart/商品表.png)商品表
 
-![资讯表](./database_chart/资讯表.png)资讯表
+![资讯表](/database_chart/资讯表.png)资讯表
 
-![用户表](./database_chart/用户表.png)用户表
+![用户表](/database_chart/用户表.png)用户表
 
-![登录表](./database_chart/登录.png)登录表
+![登录表](/database_chart/登录.png)登录表
 
-![地址表](./database_chart/地址表.png)地址表
+![地址表](/database_chart/地址表.png)地址表
