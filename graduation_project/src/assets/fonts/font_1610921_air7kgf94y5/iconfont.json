@@ -6,32 +6,18 @@
   "description": "",
   "glyphs": [
     {
-      "icon_id": "611360",
-      "name": "time",
-      "font_class": "time",
-      "unicode": "e629",
-      "unicode_decimal": 58921
+      "icon_id": "1913733",
+      "name": "edit",
+      "font_class": "bianji",
+      "unicode": "e603",
+      "unicode_decimal": 58883
     },
     {
-      "icon_id": "800320",
-      "name": "house",
-      "font_class": "house",
-      "unicode": "e611",
-      "unicode_decimal": 58897
-    },
-    {
-      "icon_id": "811398",
-      "name": "star",
-      "font_class": "star",
-      "unicode": "e6a8",
-      "unicode_decimal": 59048
-    },
-    {
-      "icon_id": "1397198",
-      "name": "右",
-      "font_class": "you",
-      "unicode": "e608",
-      "unicode_decimal": 58888
+      "icon_id": "7971683",
+      "name": "trash",
+      "font_class": "trash",
+      "unicode": "e63a",
+      "unicode_decimal": 58938
     },
     {
       "icon_id": "1937077",
@@ -41,11 +27,11 @@
       "unicode_decimal": 59023
     },
     {
-      "icon_id": "5675700",
-      "name": "user",
-      "font_class": "geren",
-      "unicode": "e600",
-      "unicode_decimal": 58880
+      "icon_id": "800320",
+      "name": "house",
+      "font_class": "house",
+      "unicode": "e611",
+      "unicode_decimal": 58897
     },
     {
       "icon_id": "8407095",
@@ -53,6 +39,27 @@
       "font_class": "mima",
       "unicode": "e60c",
       "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "10527196",
+      "name": "home",
+      "font_class": "icon_home",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "811398",
+      "name": "star",
+      "font_class": "star",
+      "unicode": "e6a8",
+      "unicode_decimal": 59048
+    },
+    {
+      "icon_id": "5675700",
+      "name": "user",
+      "font_class": "geren",
+      "unicode": "e600",
+      "unicode_decimal": 58880
     },
     {
       "icon_id": "8513451",
@@ -69,18 +76,25 @@
       "unicode_decimal": 58964
     },
     {
-      "icon_id": "10527196",
-      "name": "home",
-      "font_class": "icon_home",
-      "unicode": "e601",
-      "unicode_decimal": 58881
-    },
-    {
       "icon_id": "11250848",
       "name": "定位",
       "font_class": "location",
       "unicode": "e68b",
       "unicode_decimal": 59019
+    },
+    {
+      "icon_id": "1397198",
+      "name": "右",
+      "font_class": "you",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "611360",
+      "name": "time",
+      "font_class": "time",
+      "unicode": "e629",
+      "unicode_decimal": 58921
     }
   ]
 }
