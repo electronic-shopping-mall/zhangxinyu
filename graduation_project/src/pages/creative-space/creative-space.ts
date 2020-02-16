@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { InformationdetailPage } from '../informationdetail/informationdetail';
+import {HttpClient,HttpHeaders} from '@angular/common/http';
 
 /**
  * Generated class for the CreativeSpacePage page.
@@ -16,14 +17,18 @@ import { InformationdetailPage } from '../informationdetail/informationdetail';
 })
 export class CreativeSpacePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,private http:HttpClient) {
   }
 
+  newsData; //从后台返回的资讯数据
   ionViewDidLoad() {
-    console.log('ionViewDidLoad CreativeSpacePage');
+    this.http.post('/api/news/creative',{}).subscribe(data=>{
+      this.newsData=Array.prototype.slice.call(data);
+    });
   }
 
-  goDetail(){
+  goDetail(newsID){
+    localStorage.setItem('newsID',newsID)
     this.navCtrl.push(InformationdetailPage);
   }
 }

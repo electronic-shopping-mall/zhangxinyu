@@ -31,7 +31,7 @@ page-creative-space {
                     float: left;
                     width: 230px;
                     height:140px;
-                    // border:1px solid red;
+                    // background: yellow;
                     margin-left:5px;
                     margin-top:5px;
                     .title{
@@ -40,7 +40,20 @@ page-creative-space {
                         height:23px;
                         // border:1px solid purple;
                         text-align: center;
-                        font-weight: bold;
+                        font-weight: 500;
+                        font-size:16px;
+                        overflow: hidden;
+                        text-overflow:ellipsis;
+                        white-space: nowrap; 
+                    }
+                    .content{
+                        display: block;
+                        width: 230px;
+                        height:98px;
+                        // border: 1px solid red;
+                        overflow: hidden;
+                        text-overflow:ellipsis;
+                        color:#717571;
                     }
                 }
                 .time{
@@ -50,6 +63,7 @@ page-creative-space {
                     float: right;
                     margin-right:10px;
                     text-align: right;
+                    color:#717571;
                 }
             }
         }
