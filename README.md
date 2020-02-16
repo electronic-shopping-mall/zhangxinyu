@@ -2,16 +2,38 @@
 电子购物商城前台子系统设计与实现
 
 # 截至目前已完成任务
-1. 墨刀原型设计     [https://free.modao.cc/app/47f6e03dbb90c8b2f5dc9053163f6a7103ed0f87](https://free.modao.cc/app/47f6e03dbb90c8b2f5dc9053163f6a7103ed0f87)
+#### 墨刀原型设计
+墨刀原型设计链接     [https://free.modao.cc/app/47f6e03dbb90c8b2f5dc9053163f6a7103ed0f87](https://free.modao.cc/app/47f6e03dbb90c8b2f5dc9053163f6a7103ed0f87)
 
-2. ionic项目创建
- 
-3.  后端服务器搭建
+#### ionic项目创建及配置相关文件
+![配置文件](./database_chart/ionic配置文件.png)配置文件
 
-4. 数据库创建
+#### 后端虚拟服务器环境配置及mysql数据库环境配置
 
-![商品表](https://github.com/electronic-shopping-mall/zhangxinyu/blob/master/database_chart/%E5%95%86%E5%93%81%E8%A1%A8.png?raw=true)商品表
+#### 前后端数据交互
+1. 前端发出http请求,服务器端做出相应,并将数据返回至浏览器端
+2. 浏览器端做出数据解析,将数据呈现至前端页面上 
 
-![资讯表](https://github.com/electronic-shopping-mall/zhangxinyu/blob/master/database_chart/%E8%B5%84%E8%AE%AF%E8%A1%A8.png?raw=true)资讯表
+#### 服务器端代码编写
+1. 编写api.js接口文件
 
-![用户表](https://github.com/electronic-shopping-mall/zhangxinyu/blob/master/database_chart/%E7%94%A8%E6%88%B7%E8%A1%A8.png?raw=true)用户表
+#### 静态页面实现:
+登录页  注册页  忘记密码页  首页  商品详情页  搜索页  商品详情页  咨询页  资讯详情页  我的页面  设置页  个人信息页  收货地址页 
+
+#### 功能实现:
+1. 登录页:登录功能
+2. 注册页:注册功能
+3. 首 页: 搜索功能 查看商品详情 
+4. 地址页:查询收货地址 添加收货地址 编辑收货地址 删除收货地址 设置默认地址
+5. 资讯页:请求资讯页面数据  查看资讯详情 
+
+
+![商品表](./database_chart/商品表.png)商品表
+
+![资讯表](./database_chart/资讯表.png)资讯表
+
+![用户表](./database_chart/用户表.png)用户表
+
+![登录表](./database_chart/登录.png)登录表
+
+![地址表](./database_chart/地址表.png)地址表
