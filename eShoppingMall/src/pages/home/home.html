@@ -1,0 +1,72 @@
+<ion-header no-border>
+    <ion-toolbar>  
+        <ion-title class="my-title">首页</ion-title>  
+    </ion-toolbar>
+    <!-- <ion-navbar>
+        <ion-title>首页</ion-title>
+    </ion-navbar> -->
+  <div class="head">
+      <div id="search">
+            <i class="iconfont icon-sousuo"></i>
+          <input type="text" placeholder="点击搜索你想要的商品" (click)="goSearch()">
+      </div>
+  </div>
+</ion-header>
+
+<ion-content>
+  <ion-slides loop="true" autoplay="3000" pager="true">
+    <ion-slide><img src="assets/imgs/首页轮播/床01.jpg" /></ion-slide>
+    <ion-slide><img src="assets/imgs/首页轮播/洗手液02.jpg" /></ion-slide>
+    <ion-slide><img src="assets/imgs/首页轮播/锅03.jpg" /></ion-slide>
+  </ion-slides>
+  <ul id="navigation">
+    <li (click)="goNew()">
+      <img src="../assets/imgs/首页推荐/图标-新品.jpg" alt="">
+      <span>新品</span>
+    </li>
+    <li (click)="goHot()">
+        <img src="../assets/imgs/首页推荐/图标-热卖.jpg" alt="">
+        <span>热卖</span>
+    </li>
+    <li (click)="goFurniture()">
+        <img src="../assets/imgs/首页推荐/图标-家具.jpg" alt="">
+        <span>家具</span>
+    </li>
+    <li (click)="goLeisure()">
+        <img src="../assets/imgs/首页推荐/图标-家居服.jpg" alt="">
+        <span>家居服</span>
+    </li>
+    <li (click)="goBed()">
+        <img src="../assets/imgs/首页推荐/图标-床品.jpg" alt="">
+        <span>床品</span>
+    </li>
+    <li (click)="goCook()">
+        <img src="../assets/imgs/首页推荐/图标-下厨.jpg" alt="">
+        <span>下厨</span>
+    </li>
+    <li (click)="goHousework()">
+        <img src="../assets/imgs/首页推荐/图标-家务.jpg" alt="">
+        <span>家务</span>
+    </li>
+    <li (click)="goCommodity()">
+        <img src="../assets/imgs/首页推荐/图标-日用.jpg" alt="">
+        <span>生活日用</span>
+    </li>
+    <li (click)="goShower()">
+        <img src="../assets/imgs/首页推荐/图标-洗护.jpg" alt="">
+        <span>洗 沐</span>
+    </li>
+    <li (click)="goSale()">
+        <img src="../assets/imgs/首页推荐/图标-甩卖.jpg" alt="">
+        <span>甩卖</span>
+    </li>
+  </ul>
+  <img src="../assets/imgs/首页推荐/今日上新.png" alt="">
+  <ul class="goods">
+    <li (click)="goGoods(item.productID)" *ngFor="let item of goodsDatah;let i=index">
+      <img src="{{item.images.split('|')[0]}}" alt="">
+      <span>&nbsp;{{item.title}}</span>
+      <span style="color:rgb(196, 16, 16);">&nbsp;￥ {{item.price}}</span>
+    </li>
+  </ul>
+</ion-content>
