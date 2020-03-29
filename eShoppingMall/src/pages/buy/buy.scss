@@ -1,0 +1,230 @@
+page-buy {
+    ion-content{
+        .bk{
+            width: 100%;
+            height:100%;
+            background: #f5f5f5;
+            div{
+                background: white;
+            }
+            .address{
+                width: 100%;
+                height:85px;
+                // border:1px solid red;
+                .yes{
+                    div{
+                        height:80px;
+                        // border:1px solid red;
+                        float: left;
+                    }
+                    .div1{
+                        width: 8%;
+                        line-height: 80px;
+                        text-align: center;
+                        color:#bbbbbb;
+                    }
+                    .div2{
+                        width: 84%;
+                        span{
+                            display: block;
+                            // border:1px solid black;
+                            float: left;
+                            margin-top:5px;
+                            padding-left:5px;
+                        }
+                        .name{
+                            width:30%;
+                            height:25px;
+                            line-height: 25px;
+                        }
+                        .phone{
+                            width: 70%;
+                            height:25px;
+                            line-height: 25px;
+                        }
+                        .addressDetail{
+                            width: 100%;
+                            height:45px;
+                            color:#bbbbbb;
+                        }
+                    }
+                    .div3{
+                        width:8%;
+                        line-height: 80px;
+                        text-align: center;
+                        color:#bbbbbb;
+                    }
+                }
+                .no{
+                    div{
+                        width: 96%;
+                        height:80px;
+                        margin-left: 2%;
+                        margin-top:5px;
+                        border:1px dashed #bbbbbb;
+                        border-radius: 6px;
+                        line-height: 80px;
+                        text-align: center;
+                        color:#bbbbbb;
+                        i{
+                            color:#bbbbbb;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+            .goods{
+                margin-top:10px;
+                // width: 100%;
+                // height:300px;
+                // border:1px solid black;
+                ul{
+                    margin: 0;
+                    padding:0;
+                    background: white;
+                    list-style: none;
+                    li{
+                        width: 100%;
+                        height:110px;
+                        background: white;
+                        // border-bottom:1px solid red;
+                        float: left;
+                        .left{
+                            width: 23%;
+                            height:90px;
+                            margin-left:3%;
+                            margin-top: 10px;
+                            background: white;
+    
+                            // border:1px solid black;
+                            float: left;
+                            img{
+                                // margin-left:4px;
+                                // width: 100px;
+                                // height:120px;
+                                width: 100%;
+                                height:100%;
+                            }
+                        }
+                        .right{
+                            background: white;
+                            margin-top: 5px;
+                            margin-left:3%;
+                            width:67%;
+                            height:100px;
+                            float: left;
+                            // border:1px solid black;
+                            span{
+                                width: 100%;
+                                height:25px;
+                                display: block;
+                                // border:1px solid green;
+                                line-height: 25px;
+                            }
+                            .title{
+                                margin-top: 5px;
+                                #amount{
+                                    display: inline-block;
+                                    width:50px;
+                                    height:25px;
+                                    // border:1px solid red;
+                                    float: right;
+                                    text-align: right;
+                                    color:#bbbbbb;
+                                }
+                            }
+                            .type{
+                                margin-top:5px;
+                                color:#bbbbbb;
+                            }
+                            .price{
+                                margin-top:5px;
+                            }
+                        }
+                    }
+                }
+                .sum{
+                    width: 100%;
+                    height:30px;
+                    float: left;
+                    background: white;
+                    // margin-top:5px;
+                    // border:1px solid red;
+                    div{
+                        text-align: right;
+                        line-height: 30px;
+                        float: left;
+                        width:96%;
+                        margin-left:2%;
+                        height:30px;
+                        border-top:1px solid #f5f5f5;
+                        #sumprice{
+                            font-weight: bold;
+                            font-size:16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    ion-footer{
+        div{
+            width: 100%;
+            height: 40px;
+            border-top:1px solid #bbbbbb;
+            background: white;
+            padding-left:10px;
+            line-height:40px;
+            span{
+                font-size:18px;
+                font-weight: bold;
+            }
+            button{
+                margin-top:3px;
+                width:90px;
+                height:32px;
+                border-radius: 20px;
+                background: #80c9c4;
+                color:white;
+                // font-size:16px;
+                // margin-left:100px;
+                float: right;
+                margin-right:5px;
+            }
+        }
+    }
+    .DialogTwo{
+        position: absolute;
+        width: 70%;
+        height:45px;
+        left:15%;
+        top:48%;
+        z-index:1000; 
+        background-color:white;
+        border-radius: 10px;
+        // border:1px solid #80c9c4;
+ 
+        .div-content{
+            width: 100%;
+            height:45px;
+            text-align: center;
+            line-height: 45px;
+            font-size:17px;
+            font-weight: bold;
+            // border:1px solid red;
+        }
+    }
+ 
+    .shade{
+        position: absolute; 
+        top: 0%; 
+        left: 0%; 
+        width: 100%; 
+        height: 100%; 
+        background-color: black; 
+        z-index:999; 
+        -moz-opacity: 0.3; 
+        opacity:.30; 
+        filter: alpha(opacity=30);
+    }
+}
