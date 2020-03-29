@@ -1,0 +1,38 @@
+<ion-header>
+    <div class="headbk">
+        <span class="backicon" (click)="goBack()">
+          <i class="iconfont icon-back"></i>
+        </span>
+        <span class="title">修改收货地址</span>
+    </div>
+  </ion-header>
+  
+  <ion-content >
+    <div>
+        <ion-list>
+            <ion-item>
+              <ion-label>收件人&nbsp;&nbsp;&nbsp;&nbsp;</ion-label>
+              <ion-input placeholder="请输入姓名" [(ngModel)]="name"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label>联系方式</ion-label>
+                <ion-input placeholder="请输入手机号" [(ngModel)]="phone"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label>所在地区</ion-label>
+                <ion-multi-picker placeholder="请选择地区" [(ngModel)]="area" item-content [multiPickerColumns]="listData" [cancelText]="'取消'" [doneText]="'完成'"></ion-multi-picker>
+            </ion-item>
+            <ion-item>
+                <ion-label>详细地址</ion-label>
+                <ion-textarea [(ngModel)]="detail"></ion-textarea>
+            </ion-item>
+            <ion-item>
+                <ion-label>设为默认地址</ion-label>
+                <ion-toggle color="secondary" [(ngModel)]="isDefault"></ion-toggle>
+            </ion-item>
+        </ion-list>
+    </div>
+  </ion-content>
+  <ion-footer>
+      <button (click)="save()">保存</button>
+  </ion-footer>
