@@ -1,0 +1,129 @@
+page-info {
+    ion-header{
+        .edit{
+            display: block;
+            position: absolute;
+            width: 15%;
+            height:48px;
+            // right:10px;
+            border:1px solid red;
+            line-height: 48px;
+            text-align: center;
+            right: 0;
+            top:0;
+            font-size:15px;
+        }
+    }
+    ion-content{
+        .head{
+            width: 100%;
+            height:140px;
+            // border:1px solid red;
+            background: white;
+            float: left;
+            .avatar{
+                width:90px;
+                height:90px;
+                // border:1px solid black;
+                margin:10px auto;
+                border-radius: 50%;
+                img{
+                    width: 100%;
+                    height:100%;
+                    border-radius: 50%;
+                }
+            }
+            span{
+                display: block;
+                width: 100%;
+                height:20px;
+                // border:1px solid red;
+                color:#989C98;
+                text-align: center;
+            }
+        }
+        .ul{
+            margin-top:10px;
+            width: 100%;
+            float: left;
+            // border:1px solid red;
+            ul{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                background: white;
+                li{
+                    width: 100%;
+                    height:45px;
+                    float: left;
+                    background: white;
+                    // border-bottom:1px solid gray;
+                    div{
+                        float: left;
+                        background: white;
+                        // border-bottom:1px solid gray;
+                    }
+                    .left{
+                        width: 23%;
+                        height:45px;
+                        padding-left: 10px;
+                        // border:1px solid red;
+                        line-height: 45px;
+                        text-align: left;
+                        color:gray;
+                    }
+                    .right{
+                        width: 77%;
+                        height:45px;
+                        // border:1px solid red;
+                        input{
+                            margin:0;
+                            border:none;
+                            width: 100%;
+                            height:45px;
+                            padding-left: 6px;
+                            background: white;
+                        }
+                    }
+                    #sex{
+                        width: 77%;
+                        height:45px;
+                        // border:1px solid red;
+                        label:last-child{
+                            margin-left:10px;
+                        }
+                        input{
+                            width: 20px;
+                            height:20px;
+                            // margin-left:10px;
+                            margin-left: 3px;
+                            margin-top:12px;
+
+                        }
+                    }
+                }
+            }
+            ion-multi-picker{
+                position: absolute;
+                left:20%;
+                line-height: 45px;
+            }
+            ion-datetime{
+                position: absolute;
+                left:20%;
+                line-height: 45px;
+            }
+        }
+    }
+    ion-footer{
+        #save{
+            width: 100%;
+            height:45px;
+            color: white;
+            background: #80c9c4;
+            font-size:16px;
+            border:none;
+        }
+    }
+
+}

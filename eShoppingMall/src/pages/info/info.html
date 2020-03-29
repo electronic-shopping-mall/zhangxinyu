@@ -1,0 +1,87 @@
+<!--
+  Generated template for the InfoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header no-border>
+  <div class="headbk">
+    <span class="backicon" (click)="goBack()">
+      <i class="iconfont icon-back"></i>
+    </span>
+    <span class="title">个人信息</span>
+    <!-- <span class="edit">编辑</span> -->
+  </div>
+</ion-header>
+
+<ion-content>
+  <div>
+    <div class="head">
+      <div>
+        <div class="avatar"  (click)="presentActionSheet()" [ngStyle]="{'background-image': 'url('+avatar+')'}">
+          <img src="{{headerImage}}" alt="">
+        </div>
+        <!-- <span></span> -->
+      </div>
+    </div>
+    <div class="ul">
+      <ul>
+        <li>
+          <div class="left">昵称</div>
+          <div class="right">
+            <input type="text" [(ngModel)]="name">
+          </div>
+        </li>
+        <li>
+            <div class="left">ID</div>
+            <div class="right">
+              <input type="text" [(ngModel)]="userID" disabled style="color:#bbbbbb;">
+            </div>
+          </li>
+        <li>
+          <div class="left">性别</div>
+          <div id="sex">
+            <form>
+              <label><input name="sex" type="radio" value="男" [(ngModel)]="sex">男</label> 
+              <label><input name="sex" type="radio" value="女" [(ngModel)]="sex">女</label>
+            </form>
+          </div>
+        </li>
+        <li>
+          <div class="left">出生日期</div>
+          <div class="right">
+            <ion-datetime displayFormat="YYYY-MM-DD" [(ngModel)]="myDate" placeholder="请选择选择日期" [cancelText]="'取消'" [doneText]="'完成'"></ion-datetime>
+          </div>
+        </li>
+        <li>
+          <div class="left">所在地</div>
+          <div class="right">
+            <ion-multi-picker placeholder="请选择地区" [(ngModel)]="area" item-content [multiPickerColumns]="listData" [cancelText]="'取消'" [doneText]="'完成'"></ion-multi-picker>
+          </div>
+        </li>
+      </ul>
+      <!-- <ion-list>
+        <ion-item>
+          <ion-label>昵称</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label>性别</ion-label>
+            <input name="sex" type="radio" value="男" [(ngModel)]="sex">男 
+            <input name="sex" type="radio" value="女" [(ngModel)]="sex">女
+          </ion-item>
+        <ion-item>
+          <ion-label>出生日期</ion-label>
+          <ion-datetime displayFormat="YYYY-MM-DD" [(ngModel)]="myDate" placeholder="请选择选择日期" [cancelText]="'取消'" [doneText]="'完成'"></ion-datetime>
+        </ion-item>
+        <ion-item>
+          <ion-label>所在地</ion-label>
+          <ion-multi-picker placeholder="请选择地区" [(ngModel)]="area" item-content [multiPickerColumns]="listData" [cancelText]="'取消'" [doneText]="'完成'"></ion-multi-picker>
+        </ion-item>
+      </ion-list> -->
+    </div>
+  </div>
+</ion-content>
+<ion-footer>
+  <button (click)="save()" id="save">保存</button>
+</ion-footer>
