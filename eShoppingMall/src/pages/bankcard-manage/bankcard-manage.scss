@@ -1,0 +1,51 @@
+page-bankcard-manage {
+    ion-content{
+        .back{
+            width: 100%;
+            height:100%;
+            background: #f6f7f8;
+            float: left;
+            ul{
+                margin-top:10px;
+                padding: 0;
+                list-style: none;
+                li{
+                    width: 94%;
+                    height:90px;
+                    margin-left:3%;
+                    border-radius: 10px;
+                    margin-top:10px;
+                    background: #b62d35;
+                    span{
+                        display: block;
+                        width: 100%;
+                        height:45px;
+                        line-height: 45px;
+                        padding-left: 10px;
+                        // border:1px solid black;
+                        color:white;
+                    }
+                    span:last-child{
+                        font-size:20px;
+                    }
+                }
+            }
+            .add{
+                width: 94%;
+                height:45px;
+                margin-left:3%;
+                float: left;
+                border:1px solid #bbbbbb;
+                text-align: center;
+                line-height: 45px;
+                color:#bbbbbb;
+                border-radius: 10px;
+                margin-top:5px;
+                i{
+                    color:#bbbbbb;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
