@@ -1,0 +1,45 @@
+page-resetpwd2 {
+    ion-content{
+        background-color:white!important;
+        .div1{
+            width: 80%;
+            height:35px;
+            margin-left:10%;
+            margin-top:20px;
+            // border:1px solid red;
+            span{
+                color:#8F8E94;
+                font-size:16px;
+                display:block;
+                width:65px;
+                height: 35px;
+                // border:1px solid green;
+                float: left;
+                line-height:35px;
+                text-align: right;
+            }
+            input{
+                float: left;
+                width: 210px;
+                height:35px;
+                border:none;
+                border-bottom:1px solid #BBBBBB;
+                margin-left:10px;
+            }
+            input::-webkit-input-placeholder { /* WebKit browsers */ 
+                color: #C3BDBD; 
+            } 
+        }
+        #sure{
+            width: 80%;
+            height:40px;
+            border:1px solid #80C9C4;
+            background: #80C9C4;
+            color:white;
+            font-size:16px;
+            margin-left:10%;
+            margin-top:30px;
+            border-radius:30px;
+        }
+    }
+}
