@@ -372,9 +372,9 @@ router.post('/api/deleteAddress',function(req,res){
 });
 
 //请求资讯 创意空间
-router.post('/api/news/creative',function(req,res){
+router.post('/api/news/newslist',function(req,res){
   const sql1='select * from news where type=? order by time desc';
-  connection.query(sql1,['创意空间'],function(err,results){
+  connection.query(sql1,[req.body.type],function(err,results){
     if(err){
       console.error(err);
       process.exit(1);
