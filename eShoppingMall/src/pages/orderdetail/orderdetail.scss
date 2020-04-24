@@ -1,0 +1,281 @@
+page-orderdetail {
+   ion-content{
+       div{
+           float: left;
+           .countdown{
+               width: 100%;
+               height:60px;
+               background: #d56e63;
+               float: left;
+               div{
+                   height: 50px;
+                //    border:1px solid black;
+                   height:50px;
+                   float: left;
+                   margin-top:5px;
+               }
+               .left{
+                   width:15%;
+                   span{
+                        line-height: 50px;
+                        text-align: center;
+                        padding-left: 10px;
+                        font-size:14px;
+                        i{
+                            color:white;
+                            font-size:35px;
+                        }
+                   }
+               }
+               .right{
+                   width:85%;
+                   span{
+                       display: block;
+                       width: 100%;
+                       height:25px;
+                       line-height: 25px;
+                       color:white;
+                    //    border:1px solid red;
+                   }
+               }
+           }
+           .address{
+                div{
+                    height:80px;
+                    // border:1px solid red;
+                    float: left;
+                    background: white;
+                }
+                .div1{
+                    width: 8%;
+                    line-height: 80px;
+                    text-align: center;
+                    color:#bbbbbb;
+                }
+                .div2{
+                    width:92%;
+                    span{
+                        display: block;
+                        // border:1px solid black;
+                        float: left;
+                        margin-top:5px;
+                        padding-left:5px;
+                    }
+                    .name{
+                        width:40%;
+                        height:25px;
+                        line-height: 25px;
+                    }
+                    .phone{
+                        width: 60%;
+                        height:25px;
+                        line-height: 25px;
+                    }
+                    .addressDetail{
+                        width: 100%;
+                        height:45px;
+                        color:#bbbbbb;
+                    }
+                }
+            }
+            .ul{
+                margin-top:5px;
+                background: white;
+                ul{
+                    margin:0;
+                    padding:0;
+                    float: left;
+                    background: white;
+                    list-style: none;
+                    li{
+                        width: 100%;
+                        // height:110px;
+                        float: left;
+                        // border:1px solid red;
+                        background: white;
+                        margin-top:0px;
+                        .left{
+                            width: 23%;
+                            height:90px;
+                            margin-left:3%;
+                            margin-top: 10px;
+                            background: white;
+            
+                            // border:1px solid black;
+                            float: left;
+                            img{
+                                // margin-left:4px;
+                                // width: 100px;
+                                // height:120px;
+                                width: 100%;
+                                height:100%;
+                            }
+                        }
+                        .right{
+                            background: white;
+                            margin-top: 5px;
+                            margin-left:3%;
+                            width:67%;
+                            height:100px;
+                            float: left;
+                            // border:1px solid black;
+                            span{
+                                width: 100%;
+                                height:25px;
+                                display: block;
+                                // border:1px solid green;
+                                line-height: 25px;
+                            }
+                            .title{
+                                margin-top: 5px;
+                                #amount{
+                                    display: inline-block;
+                                    width:50px;
+                                    height:25px;
+                                    // border:1px solid red;
+                                    float: right;
+                                    text-align: right;
+                                    color:#bbbbbb;
+                                }
+                            }
+                            .type{
+                                margin-top:5px;
+                                color:#bbbbbb;
+                            }
+                            .price{
+                                margin-top:5px;
+                            }
+                        }
+                        .done{
+                            width: 100%;
+                            height:35px;
+                            float: left;
+                            background: white;
+                            // border:1px solid red;
+                            margin-top:5px;
+                            button{
+                                width:50px;
+                                background: none;
+                                float: right;
+                                height:25px;
+                                border-radius: 20px;
+                                margin-right:10px;
+                                border:1px solid #ee202e;
+                                color:#ee202e;
+                            }
+                        }
+                    }
+                }
+            }
+            .orderinfo{
+                width: 100%;
+                // height:200px;
+                background: white;
+                float: left;
+                border-top:1px solid #f6f7f8;
+                div{
+                    width: 100%;
+                    height:30px;
+                    float: left;
+                    // border:1px solid red;
+                    background: white;
+                    span{
+                        width: 50%;
+                        display: block;
+                        height:30px;
+                        line-height: 30px;
+                        float: left;
+                        // background: yellow;
+                        color: #797979;
+                    }
+                    .span1{
+                        text-align: left;
+                        padding-left: 10px;
+                    }
+                    .span2{
+                        text-align: right;
+                        padding-right: 10px;
+                    }
+                }
+            }
+       }
+   }
+   ion-footer{
+        .daifukuan{
+            width: 100%;
+            height:35px;
+            background: white;
+            float: left;
+            // border:1px solid black;
+            button{
+                margin-top:5px;
+                background: none;
+                float: right;
+                height:25px;
+                border-radius: 20px;
+                margin-right:10px;
+            }
+            button:first-child{
+                width: 50px;
+                border:1px solid #ee202e;
+                color:#ee202e;
+            }
+            button:last-child{
+                width: 80px;
+                border:1px solid black;
+
+            }
+        }
+        .yishouhuo{
+            width: 100%;
+            height:35px;
+            background: white;
+            margin-top:10px;
+            float: left;
+            // border:1px solid black;
+            button{
+                width: 80px;
+                color:#ee202e;
+                border:1px solid #ee202e;
+                background: none;
+                float: right;
+                height:25px;
+                border-radius: 20px;
+                margin-right:10px;
+            }
+        }
+   }
+   .DialogTwo{
+        position: absolute;
+        width: 70%;
+        height:45px;
+        left:15%;
+        top:48%;
+        z-index:1000; 
+        background-color:white;
+        border-radius: 10px;
+        // border:1px solid #80c9c4;
+
+        .div-content{
+            width: 100%;
+            height:45px;
+            text-align: center;
+            line-height: 45px;
+            font-size:17px;
+            font-weight: bold;
+            // border:1px solid red;
+        }
+    }
+    .shade{
+        position: absolute; 
+        top: 0%; 
+        left: 0%; 
+        width: 100%; 
+        height: 100%; 
+        background-color: black; 
+        z-index:999; 
+        -moz-opacity: 0.3; 
+        opacity:.30; 
+        filter: alpha(opacity=30);
+    }
+}

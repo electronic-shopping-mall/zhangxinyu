@@ -1,0 +1,27 @@
+<ion-header no-border>
+    <!-- <ion-toolbar>  
+        <ion-title class="my-title">资讯</ion-title>  
+    </ion-toolbar> -->
+    <div class="headbk">
+        <!-- <span class="backicon" (click)="goBack()">
+          <i class="iconfont icon-back"></i>
+        </span> -->
+        <span class="title">资讯</span>
+    </div>
+</ion-header>
+<ion-content>
+  <!-- <div>
+    <img src="../assets/imgs/资讯页面/资讯1.png"  (click)="goCreative()" />
+  </div>
+  <div>
+    <img src="../assets/imgs/资讯页面/资讯2.png" />
+  </div>
+  <div>
+    <img src="../assets/imgs/资讯页面/资讯3.png" />
+  </div> -->
+  <ul>
+    <li *ngFor="let item of imgs;let i=index;" (click)="goNewsList(i)">
+      <img src="{{item}}" />
+    </li>
+  </ul>
+</ion-content>

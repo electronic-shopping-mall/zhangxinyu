@@ -1,0 +1,19 @@
+page-about {
+    ion-header{
+        .headbk{
+            border:none;
+        }
+    }
+    ion-content{
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li{
+                width: 100%;
+                height:185px;
+                // border:1px solid red;
+            }
+        }
+    }
+}

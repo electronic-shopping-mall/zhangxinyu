@@ -1,0 +1,128 @@
+<ion-header no-border>
+  <!-- <ion-toolbar>  
+    <button ion-button clear small navPop style="padding: 0;float: left;">  
+      <i class="iconfont icon-back"></i>
+    </button>  
+    <ul id="navList">
+      <li  (click)="isClick(1)" [class.first]="isActive==1" >商品</li>
+      <li  (click)="isClick(2)" [class.second]="isActive==2" >详情</li>
+      <li  (click)="isClick(3)" [class.third]="isActive==3" >评论</li>
+      <li (click)="goHome()"><i class="iconfont icon-icon_home"></i></li>
+    </ul>
+  </ion-toolbar>   -->
+  <div class="headbk">
+    <span class="backicon" (click)="goBack()">
+      <i class="iconfont icon-back"></i>
+    </span>
+    <ul id="navList">
+      <li  (click)="isClick(1)" [class.first]="isActive==1" >商品</li>
+      <li  (click)="isClick(2)" [class.second]="isActive==2" >详情</li>
+      <li  (click)="isClick(3)" [class.third]="isActive==3" >评论</li>
+      <li (click)="goHome()"><i class="iconfont icon-icon_home"></i></li>
+    </ul>
+  </div>
+</ion-header>
+
+<ion-content>
+    <div [ngSwitch]='isActive'>
+        <div *ngSwitchCase='1'>
+            <div class="lunbo" *ngIf="len>0">
+                <ion-slides autoplay="3000" loop="true">
+                    <ion-slide *ngFor="let item of images;let i=index;">
+                      <img src="{{item}}">
+                    </ion-slide>
+                </ion-slides>
+                <div class="text">
+                  <span class="title">{{title}}</span>
+                  <span class="price">￥ {{price}}</span>
+                  <!-- <span class="describe"> {{describe}}</span> -->
+                  <span class="sale">已售：{{sale}}</span>
+                </div>
+            </div>
+            <div class="describe">
+              <span>- 商品描述 -</span>
+              <div>{{describe}}</div>
+            </div>
+        </div>
+        <div *ngSwitchCase='2' >
+          <div class="detail">
+              <div *ngFor="let item of details;let i=index;">
+                <img src="{{item}}" alt="">
+              </div>
+          </div>
+        </div>
+        <div *ngSwitchCase='3'>
+          <span class="zong">共计&nbsp;{{commentNum}}&nbsp;条评论</span>
+          <div class="bar"></div>
+          <div id="kong" *ngIf="commentData.length==0">
+            <img src="../assets/imgs/空评论.jpg" alt="">
+            <span>暂时还没有人评论哦！</span>
+          </div>
+          <ul *ngIf="commentData.length!=0">
+            <li *ngFor="let item of commentData;let i=index;">
+              <div class="left">
+                <img src="{{item.picture}}" alt="">
+              </div>
+              <div class="right">
+                <span>{{item.userName}}</span>
+                <span>{{item.time}}</span>
+              </div>
+              <div class="comment">{{item.context}}</div>
+            </li>
+          </ul>
+        </div>
+    </div>
+</ion-content>
+<ion-footer no-border>
+    <div class="twobtn">
+        <ul>
+          <li class="btn1" (click)="buy()">立即购买</li>
+          <li class="btn2" (click)="addToCart()">加入购物车</li>
+        </ul>
+    </div>
+</ion-footer>
+<!--商品选择弹窗-->
+<div class="DialogOne" *ngIf="IsShowDialogOne">
+  <div class="content">
+    <div class="one">
+      <div class="left">
+        <img src="{{images[0]}}" alt="">
+      </div>
+      <div class="right">
+        <span style="color:#b62d35;font-size:16px;">￥  {{price}}</span>
+        <span style="color:#8F8E94;">库存: {{stock}}件</span>
+        <span>已选：{{choosed}}</span>
+      </div>
+      <i class="iconfont icon-False" (click)="CloseDialogOne()"></i>
+    </div>
+    <div class="two">
+      <span>请选择商品规格：</span>
+      <ul>
+        <li *ngFor="let item of typeData;let i=index" (click)="change(item.type,i)" [class.first]="choosed==item.type">
+          {{item.type}}
+        </li>
+      </ul>
+    </div>
+    <div class="three">
+      <span>请选择数量：</span>
+      <div>
+          <button id="drop" (click)="drop()" [class.jinyong]="num==1">-</button>
+          <button id="num">{{num}}</button>
+          <button id="add" (click)="add()">+</button>
+      </div>
+    </div>
+  </div>
+  <div class="btn">
+    <div (click)="sure()" id="sure" [class.notclick]="stock==0">确定</div>
+  </div>
+</div>
+ 
+<!--加入购物车成功提示弹窗-->
+<div class="DialogTwo" *ngIf="IsShowDialogTwo">
+  <div class="div-content">
+    <span>添加成功</span>
+  </div>
+</div>
+ 
+<!--遮罩层-->
+<div class="shade" *ngIf="IsShowCover" (click)="CloseDialog()"></div>

@@ -1,0 +1,137 @@
+page-search {
+    ion-header{
+        // ion-toolbar{
+        //     width: 100%;
+        //     height:45px;
+        //     // border:1px solid black;
+        // }
+        #search{
+            width:90%;
+            height:36px;
+            // border:1px solid red;
+            margin-left:10%;
+            margin-top:6px;
+            float: left;
+            span{
+                display: block;
+                float: left;
+                height:36px;
+                // border:1px solid black;
+                line-height: 36px;
+            }
+            .span1{
+                width: 10%;
+                position: absolute;
+                left:23%;
+                top:15%;
+                i{
+                    color:#BBBBBE;
+                    font-size:20px;
+                }
+            }
+            .span2{
+                width:87%;
+                input{
+                    width: 100%;
+                    height:30px;
+                    margin-top:3px;
+                    text-align: center;
+                    border-radius: 20px;
+                    border:1px solid #80C9C4;
+                }
+            }
+            .span3{
+                width: 13%;
+                color:#80c9c4;
+                font-size:15px;
+                text-align: center;
+            }
+        }
+    }
+    ion-content{
+        background-color:white!important;
+        #history{
+            width:96%;
+            // height:100px;
+            // border:1px solid black;
+            margin-top:10px;
+            margin-left:2%;
+            .text{
+                color:#B3BCB3;
+                font-size:14px;
+                display: block;
+                width:90%;
+                height:25px;
+                float: left;
+                // border:1px solid red;
+            }
+            .trash{
+                color:#B3BCB3;
+                display: block;
+                width:10%;
+                height:25px;
+                float: left;
+                // border:1px solid red;
+                i{
+                    font-size:20px;
+                }
+                text-align: right;
+            }
+            ul{
+                width: 100%;
+                // height:150px;
+                margin:0;
+                padding: 0;
+                // background:yellow;
+                list-style: none;
+                float: left;
+                li{
+                    float: left;
+                    width:70px;
+                    height:25px;
+                    line-height: 25px;
+                    border:1px solid #BBBBBB;
+                    border-radius: 5px;
+                    margin:5px 5px;
+                    text-align: center;
+                }
+            }
+        }
+        #hot{
+            width:96%;
+            // height:200px;
+            // border:1px solid black;
+            margin-left:2%;
+            // padding-top:10px;
+            margin-top:10px;
+            span{
+                color:#B3BCB3;
+                font-size:14px;
+                display: block;
+                width:90%;
+                height:25px;
+                float: left;
+                // border:1px solid red;
+            }
+            ul{
+                width: 100%;
+                // height:150px;
+                margin:0;
+                padding: 0;
+                // background:yellow;
+                list-style: none;
+                float: left;
+                li{
+                    float: left;
+                    width:70px;
+                    height:25px;
+                    border:1px solid #BBBBBB;
+                    border-radius: 5px;
+                    margin:5px 5px;
+                    line-height: 25px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

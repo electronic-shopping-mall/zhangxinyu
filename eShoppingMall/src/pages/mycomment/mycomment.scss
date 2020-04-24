@@ -1,0 +1,134 @@
+page-mycomment {
+    ion-content{
+        #kong{
+            span{
+                display: block;
+                width: 100%;
+                text-align: center;
+                color:#bbbbbb;
+                // border:1px solid red;
+            }
+            span:first-child{
+                margin-top:80px;
+                height: 120px;
+                line-height:120px;
+            }
+            i{
+                color:#bbbbbb;
+                font-size:120px;
+            }
+            .text{
+                height:25px;
+                float: left;
+            }
+        }
+        ul{
+            margin-top:5px;
+            padding: 0;
+            list-style: none;
+            // background: white;
+            .list1{
+                width: 100%;
+                height: 160px;
+                // border:1px solid red;
+                margin-top:5px;
+                .div1{
+                    width: 100%;
+                    height:90px;
+                    float: left;
+                    // margin-top:5px;
+                    background: white;
+                    // border:1px solid black;
+                    // background: yellow;
+                    div{
+                        height:80px;
+                        // border:1px solid black;
+                        float: left;
+                    }
+                    .left{
+                        margin-top:5px;
+                        width: 20%;
+                        margin-left: 2%;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .right{
+                        margin-top:5px;               
+                        width: 74%;
+                        margin-left: 2%;
+                        div{
+                            width: 100%;
+                            // border:1px solid red;
+                            float: left;
+                        }
+                        .title{
+                            height: 25px;
+                            line-height: 25px;
+                        }
+                        .star{
+                            height:30px;
+                            margin-top:10px;
+                            ul{
+                                margin:0;
+                                padding: 0;
+                                width: 105px;
+                                height:30px;
+                                // border:1px solid black;
+                                list-style: none;
+                                float: left;
+                                // background: white;
+                                li{
+                                    float: left;
+                                    width:20px;
+                                    height:30px;
+                                    // border:1px solid red;
+                                    line-height: 30px;
+                                    background: white;
+                                    color:#bbbbbb;
+                                    i{
+                                        font-size:15px;
+                                    }
+                                }
+                                .light{
+                                    color:#b62d35;
+                                }
+                            }
+                            span{
+                                display: block;
+                                float: left;
+                                width: 50px;
+                                // border:1px solid black;
+                                height:30px;
+                                font-size:13px;
+                                line-height: 30px;
+                                color:#bbbbbb;
+                            }
+                        }
+                    }
+                }
+                .div2{
+                    width: 100%;
+                    height:50px;
+                    float: left;
+                    padding: 5px;
+                    background: white;
+                    // border:1px solid black;
+                }
+                .time{
+                    // border:1px solid green;
+                    background: white;
+                    width: 100%;
+                    height: 20px;
+                    text-align: right;
+                    color:#bbbbbb;
+                    font-size:12px;
+                    float: left;
+                    line-height: 20px;
+                    padding-right: 2%;
+                }
+            }
+        }
+    }
+}

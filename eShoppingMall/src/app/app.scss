@@ -1,0 +1,294 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+ion-content{
+  background-color: #f4f4f4!important;
+}
+// ion-footer{
+//   background-color: white!important;
+// }
+.toolbar-background{
+    background: white!important;
+  }
+.toolbar-title{
+    text-align: center;
+    font-weight:100!important;
+    // color:#80c9c4;
+}
+// .toolbar-title{
+//     font-weight:100!important;
+//     text-align: center;
+// }
+
+.button-clear-ios{
+  color:#444444;
+  font-size:16px;
+}
+
+ .picker-toolbar-button:first-child .picker-button{
+  position: absolute;
+  left:0;
+  font-size:16px;
+}
+ .picker-toolbar-button:last-child .picker-button{
+  font-weight: 400;
+  font-size:16px;
+
+}
+.alert-wrapper{
+  border-radius: 10px!important;
+  float: left;
+}
+.alert-title{
+  font-size:18px!important;
+  font-weight:500!important;
+  text-align: center;
+}
+.alert-button-group{
+  // border:1px solid red;
+  padding:0px!important;
+}
+.alert-button{
+  width:45%;
+  // border:1px solid red;
+  margin-left:0;
+  color:gray!important;
+  font-size: 16px!important;
+  text-align: center!important;
+  line-height: 40px;
+  span{
+    display: block;
+    width: 100%;
+    height: 100%;
+    // border:1px solid black;
+  }
+}
+// .alert-button:first-child{
+//   position: absolute;
+//   left:10px;
+//   top:97px;
+//   // border:1px solid red;
+//   margin-left:5px;
+// }
+// .alert-button:last-child{
+//   font-weight:400!important;
+//   position: absolute;
+//   right:10px;
+//   top:97px;
+//   // border:1px solid red;
+//   margin-right:5px;
+// }
+
+.headbk{
+  width: 100%;
+  height:48px;
+  // border:1px solid red;
+  line-height: 48px;
+  background: white;
+  border-bottom:1px solid #ececec;
+  .backicon{
+      width: 15%;
+      height:48px;
+      display: block;
+      position: absolute;
+      left:2%;
+      // border:1px solid red;
+      i{
+          font-size:20px;
+      }
+  }
+  .title{
+      width: 100%;
+      height:48px;
+      line-height: 48px;
+      display: block;
+      // border:1px solid black;
+      text-align: center;
+      font-size:17px;
+  }
+}
+#navList{
+  width: 100%;
+  height:40px;
+  background: white;
+  // border:1px solid black;
+  margin-top:0px;
+  padding: 0;
+  list-style: none;
+  li{
+      width: 20%;
+      height:40px;
+      float: left;
+      // border:1px solid red;
+      text-align: center;
+      line-height: 40px;
+      font-size:15px;
+  }
+  .one{
+      color:#80c9c3;
+      border-bottom:2px solid #80c9c3;
+  }
+  .two{
+      color:#80c9c3;
+      border-bottom:2px solid #80c9c3;
+  }
+  .three{
+      color:#80c9c3;
+      border-bottom:2px solid #80c9c3;
+  }
+  .four{
+      color:#80c9c3;
+      border-bottom:2px solid #80c9c3;
+  }
+  .five{
+      color:#80c9c3;
+      border-bottom:2px solid #80c9c3;
+  }
+}
+@font-face {
+    font-family: 'Ionicons';
+    src: url('../assets/fonts/iconfont.eot');
+    src: url('../assets/fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('../assets/fonts/iconfont.woff') format('woff'),
+    url('../assets/fonts/iconfont.ttf') format('truetype'),
+    url('../assets/fonts/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family:"Ionicons" !important;
+    font-size:16px;font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-pinglunkongbaiye:before {
+  content: "\e657";
+}
+
+.icon-edit:before {
+  content: "\eecd";
+}
+
+.icon-Starash:before {
+  content: "\e636";
+}
+.icon-add:before {
+  content: "\e68c";
+}
+.icon-tubiao1:before {
+  content: "\e6e1";
+}
+
+.icon-icon8:before {
+  content: "\e612";
+}
+
+.icon-cuo:before {
+  content: "\e798";
+}
+
+.icon-sousuo:before {
+  content: "\e605";
+}
+
+.icon-False:before {
+  content: "\e625";
+}
+
+.icon-qianbao:before {
+  content: "\e66e";
+}
+
+.icon-qianbao1:before {
+  content: "\e62c";
+}
+
+.icon-tubiaolunkuo-:before {
+  content: "\e60d";
+}
+
+.icon-order_icon-copy:before {
+  content: "\e604";
+}
+
+.icon-qianbao2:before {
+  content: "\e606";
+}
+
+.icon-dingdan:before {
+  content: "\e61f";
+}
+
+.icon-dingdan1:before {
+  content: "\e622";
+}
+
+.icon-pinglun:before {
+  content: "\e619";
+}
+
+.icon-bianji:before {
+  content: "\e603";
+}
+
+.icon-trash:before {
+  content: "\e63a";
+}
+
+.icon-back:before {
+  content: "\e68f";
+}
+
+.icon-house:before {
+  content: "\e611";
+}
+
+.icon-mima:before {
+  content: "\e60c";
+}
+
+.icon-icon_home:before {
+  content: "\e601";
+}
+
+.icon-star:before {
+  content: "\e6a8";
+}
+
+.icon-geren:before {
+  content: "\e600";
+}
+
+.icon-shezhi:before {
+  content: "\e602";
+}
+
+.icon-xiaolian:before {
+  content: "\e654";
+}
+
+.icon-location:before {
+  content: "\e68b";
+}
+
+.icon-you:before {
+  content: "\e608";
+}
+
+.icon-time:before {
+  content: "\e629";
+}
+
+  

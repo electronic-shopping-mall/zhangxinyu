@@ -1,0 +1,76 @@
+<!--
+  Generated template for the OrderPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header no-border>
+  <div class="headbk">
+    <span class="backicon" (click)="goBack()">
+      <i class="iconfont icon-back"></i>
+    </span>
+    <span class="title">我的订单</span>
+  </div> 
+  <ul id="navList" header>
+      <li (click)="isClick(1)" [class.one]="isActive==1">全部</li>
+      <li (click)="isClick(2)" [class.two]="isActive==2">待付款</li>
+      <li (click)="isClick(3)" [class.three]="isActive==3">已付款</li>
+      <li (click)="isClick(4)" [class.four]="isActive==4">待收货</li>
+      <li (click)="isClick(5)" [class.five]="isActive==5">已完成</li>
+    </ul>
+</ion-header>
+
+<ion-content>
+  <div [ngSwitch]='show'>
+      <div *ngSwitchCase='1'>
+        <img src="../assets/imgs/空订单.jpg" alt="" id="kong">
+        <span class="text">还没有相关订单，快去下单吧！</span>
+      </div>
+      <div *ngSwitchCase='2'>
+          <ul class="out">
+              <li *ngFor="let item of finishData;let i=index">
+                <div class="status">{{item.orderStatus}}</div>
+                <ul class="inside">
+                  <li *ngFor="let item2 of item.productArray;let j=index">
+                    <div class="left" (click)="goDetail(item.orderNumber)">
+                        <img src="{{item2.images.split('|')[0]}}" alt="">
+                    </div>
+                    <div class="right" (click)="goDetail(item.orderNumber)">
+                        <span class="title">{{item2.title}}<span id="amount">×{{item2.amount}}</span></span>
+                        <span class="type">{{item2.type}}</span>
+                        <span class="price">￥ {{item2.price}}</span>
+                    </div>
+                    <div *ngIf="item.orderStatus=='已完成' && item2.isComment==0" class="done">
+                      <button (click)="comment(item2.productID,item.orderNumber)">评价</button>
+                    </div>
+                  </li>
+                </ul>
+                <div class="bottom">
+                    共{{item.totalNum}}件商品 总价：<span>￥ {{item.totalPrice}}</span>
+                </div>
+                <div *ngIf="item.orderStatus=='待付款'" class="daifukuan">
+                  <button (click)="pay(item.orderNumber,item.totalPrice)">支付</button>
+                  <button (click)="cancelOrder(item.orderNumber,item.productArray)">取消订单</button>
+                </div>
+                <div *ngIf="item.orderStatus=='已发货'" class="yishouhuo">
+                  <button (click)="gain(item.orderNumber)">确认收货</button>
+                </div>
+              </li>
+          </ul>
+      </div>
+  </div>
+</ion-content>
+<!--支付成功弹窗-->
+<div class="DialogTwo" *ngIf="IsShowDialogOne">
+  <div class="div-content">
+    <span>支付成功</span>
+  </div>
+</div>
+<!--取消成功弹窗-->
+<div class="DialogTwo" *ngIf="IsShowDialogTwo">
+  <div class="div-content">
+    <span>订单已成功取消</span>
+  </div>
+</div>
+<!--遮罩层-->
+<div class="shade" *ngIf="IsShowCover" (click)="CloseDialog()"></div>
