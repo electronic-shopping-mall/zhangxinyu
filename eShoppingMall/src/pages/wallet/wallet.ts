@@ -3,6 +3,7 @@ import { NavController, NavParams } from 'ionic-angular';
 import { BankcardManagePage } from '../bankcard-manage/bankcard-manage';
 import {HttpClient,HttpHeaders} from '@angular/common/http';
 import { TopupPage } from '../topup/topup';
+import { WithdrawPage } from '../withdraw/withdraw';
 
 /**
  * Generated class for the WalletPage page.
@@ -40,5 +41,8 @@ export class WalletPage {
   }
   addMoney(){
     this.navCtrl.push(TopupPage);
+  }
+  dropMoney(){
+    this.navCtrl.push(WithdrawPage);
   }
 }
