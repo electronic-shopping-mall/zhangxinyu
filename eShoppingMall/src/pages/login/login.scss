@@ -7,11 +7,24 @@ page-login {
             // border:1px solid black;
             margin-top:80px;
             div{
-                width: 64px;
-                height:64px;
                 // border:1px solid green;
-                margin-top:80px;
                 margin:auto;
+            }
+            div:first-child{
+                width: 110px;
+                height:32px;
+                // margin-top:80px;
+                // width: 100%;
+                // height: 50px;
+                // img{
+                //     width: 100%;
+                //     height: 100%;
+                // }
+            }
+            div:last-child{
+                width:65px;
+                height:18px;
+                margin-top:10px;
             }
             p{
                 width: 100%;
@@ -19,10 +32,11 @@ page-login {
                 // border:1px solid red;
                 margin:0;
                 padding: 0;
+                margin-top:15px;
                 text-align: center;
                 color:#80C9C4;
                 font-size:16px;
-
+                font-family:'楷体';
             }
 
         }
@@ -58,9 +72,9 @@ page-login {
                     margin-left:5px;
                     input{
                         width: 230px;
-                        height:35px;
+                        height:33px;
                         border:1px solid #80C9C4;
-                        border-radius:10px;
+                        border-radius:15px;
                         margin-top:5px;
                     }  
                 }              
