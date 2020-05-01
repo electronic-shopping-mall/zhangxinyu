@@ -52,6 +52,7 @@ import { Resetpwd2Page } from '../pages/resetpwd2/resetpwd2';
 import { CommentPage } from '../pages/comment/comment';
 import { MycommentPage } from '../pages/mycomment/mycomment';
 import { NewslistPage } from '../pages/newslist/newslist';
+import { WithdrawPage } from '../pages/withdraw/withdraw';
 
 @NgModule({
   declarations: [
@@ -91,6 +92,7 @@ import { NewslistPage } from '../pages/newslist/newslist';
     BankcardManagePage,  //银行卡管理页
     AddbankcardPage, //添加银行卡页面
     TopupPage, //充值页面
+    WithdrawPage, //提现页面
     OrderdetailPage,  //订单详情页
     SearchresultPage, //搜索结果页
     ResetpwdPage, //重置密码页
@@ -146,6 +148,7 @@ import { NewslistPage } from '../pages/newslist/newslist';
     BankcardManagePage,
     AddbankcardPage,
     TopupPage,
+    WithdrawPage,
     OrderdetailPage,
     SearchresultPage,
     ResetpwdPage,
